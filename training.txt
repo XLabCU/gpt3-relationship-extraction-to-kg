@@ -1,0 +1,25 @@
+You are given unstructured text about the antiquities trade. Extrapolate as many relationships as you can from the text concerning individuals, organizations, places, and objects. Every node has an id, label. Every edge has a to and from with node ids, and a label. Edges are directed, so the order of the from and to is important. Format as json.
+
+Example:
+Mary Turlington made a ceramic Ducky in Ottawa in 2023; she had Carol Holmes paint it. It was bought by the Ottawa-Civic Museum in 2024 for $1 million.
+
+ {"nodes": [
+    {
+      "Name": "Ducky",
+      "type": "Object",
+      "madeIn": "Ottawa",
+      "date": "2023",
+      "potter": "Mary Turlington",
+      "painter": "Carol Holmes",
+      "price": "$1 million"
+    }
+
+  ],
+  "edges": [
+    {
+      "startNode": "Ducky",
+      "endNode": "Ottawa-Civic Museum",
+      "type": "bought by",
+      "date": "2024"
+     }
+  ]
