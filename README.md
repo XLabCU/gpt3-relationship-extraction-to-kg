@@ -33,7 +33,7 @@ Run the extraction script from the command line:
  for file in test/*.txt; do python python_api.py training.txt $file >> output.txt; done
  ```
  
-The code for `python_api.py` is via Sixing Huang, discussed at https://medium.com/geekculture/relationship-extraction-with-gpt-3-bb019dcf41e5 and  shared at https://github.com/dgg32/gpt-3-extract.
+The code for `python_api.py` is via Sixing Huang, discussed at https://medium.com/geekculture/relationship-extraction-with-gpt-3-bb019dcf41e5 and  shared at https://github.com/dgg32/gpt-3-extract. MIT licensed. 
 
 Because most of the results will be formatted like this:
 
