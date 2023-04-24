@@ -1,5 +1,6 @@
 # gpt3-relationship-extraction-to-kg
 
+This repo hosts the code for Graham, Yates, and El-Roby 'Investigating Antiquities Trafficking with GPT-3 Enabled Knowledge Graphs: A Case Study'.
 
 ### OpenAI
 
