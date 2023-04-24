@@ -1,5 +1,5 @@
 # https://github.com/dgg32/gpt-3-extract
-# the original code didn't read in the test text!
+# Sixing Huang 
 
 import os
 import sys
