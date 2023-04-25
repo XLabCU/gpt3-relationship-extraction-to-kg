@@ -2,6 +2,8 @@
 
 This repo hosts the code for Graham, Yates, and El-Roby 'Investigating Antiquities Trafficking with GPT-3 Enabled Knowledge Graphs: A Case Study'.
 
+[![DOI](https://zenodo.org/badge/603109188.svg)](https://zenodo.org/badge/latestdoi/603109188)
+
 ### OpenAI
 
 Get a key for OpenAI, and save it to your machine's environment:
