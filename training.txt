@@ -1,19 +1,19 @@
 You are given unstructured text about the antiquities trade. Extrapolate as many relationships as you can from the prompt concerning individuals, organizations, places, and objects. Every node has a name, label. Every edge has a to and from with node names, and a label. Edges are directed, so the order of the from and to is important. Format as json. Example: Mary Turlington made a ceramic Ducky in Big Pond in 2023; she had Kenny Wong paint it. It was bought by the Grand Narrows Museum in 2023 for $123456. 
 
-[{
-	"nodes": [{
-		"label": "Ducky",
-		"type": "Object",
-		"madeIn": "Big Pond",
-		"date": "2023",
-		"potter": "Mary Turlington",
-		"painter": "Kenny Wong",
-		"price": "$123456"
-	}],
-	"edges": [{
-		"startNode": "Ducky",
-		"endNode": "Grand Narrows Museum",
-		"type": "bought by",
-		"date": "2024"
-	}]
-}]
+{
+"nodes": [
+{"name": "Mary Turlington", "label": "Person"},
+{"name": "Kenny Wong", "label": "Person"},
+{"name": "Ducky", "label": "Object"},
+{"name": "Big Pond", "label": "Place"},
+{"name": "Grand Narrows Museum", "label": "Organization"}
+],
+"edges": [
+{"from": "Mary Turlington", "to": "Ducky", "label": "created"},
+{"from": "Ducky", "to": "Kenny Wong", "label": "painted by"},
+{"from": "Grand Narrows Museum", "to": "Ducky", "label": "purchased"},
+{"from": "Mary Turlington", "to": "Big Pond", "label": "created in"},
+{"from": "Grand Narrows Museum", "to": "2023", "label": "purchased in"},
+{"from": "Ducky", "to": "2023", "label": "created in"}
+]
+}
