@@ -4,16 +4,16 @@ You are given unstructured text about the antiquities trade. Extrapolate as many
 "nodes": [
 {"name": "Mary Turlington", "label": "Person"},
 {"name": "Kenny Wong", "label": "Person"},
-{"name": "Ducky", "label": "Object"},
+{"name": "the Ducky", "label": "Object"},
 {"name": "Big Pond", "label": "Place"},
 {"name": "Grand Narrows Museum", "label": "Organization"}
 ],
 "edges": [
-{"from": "Mary Turlington", "to": "Ducky", "label": "created"},
-{"from": "Ducky", "to": "Kenny Wong", "label": "painted by"},
-{"from": "Grand Narrows Museum", "to": "Ducky", "label": "purchased"},
+{"from": "Mary Turlington", "to": "the Ducky", "label": "created"},
+{"from": "the Ducky", "to": "Kenny Wong", "label": "painted by"},
+{"from": "Grand Narrows Museum", "to": "the Ducky", "label": "purchased"},
 {"from": "Mary Turlington", "to": "Big Pond", "label": "created in"},
 {"from": "Grand Narrows Museum", "to": "2023", "label": "purchased in"},
-{"from": "Ducky", "to": "2023", "label": "created in"}
+{"from": "the Ducky", "to": "2023", "label": "created in"}
 ]
 }
